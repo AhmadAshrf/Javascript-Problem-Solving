@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Practice</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="load()">
+    <div id="content">
+        <form action="" method="get" onsubmit="formValidate(event)">
+            <label for="emailInput">E-mail</label>
+            <input type="text" name="mail" onfocus="changeColor()" onblur="emailValidate(this);" placeholder="Enter Your Email Address" id="emailInput">
+            <span id="errMSG" style="color: red;"></span>
+            <br>
+            <label for="passwordInput">Password</label>
+            <input type="text" onfocus="changeColor()" placeholder="Enter Your Password" id="passwordInput">
+            <br>
+            <input type="checkbox" id="chkBox"> Remeber Me
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="Javascript/main.js"></script>  
+</body>
+</html>
